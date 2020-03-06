@@ -57,7 +57,7 @@ class UbiquityApplicationTests {
 	private MailService mailService;
 	@Test
 	void contextLoads() {
-		mailService.sendSimpleMail("1210212670@qq.com", "你好呀", "邮件测试");
+		mailService.sendSimpleMail("xxxxxx@qq.com", "你好呀", "邮件测试");
 	}
 
 }

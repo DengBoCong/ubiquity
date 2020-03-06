@@ -32,7 +32,7 @@ public class SecondaryConfig {
     private Map<String, Object> vendorProperties;
 
     @Bean(name = "entityManagerFactorySecondary")
-    public LocalContainerEntityManagerFactoryBean entityManagerFactorySecondary(EntityManagerFactoryBuilder builder){
+    public LocalContainerEntityManagerFactoryBean entityManagerFactorySecondary(EntityManagerFactoryBuilder builder) {
         return builder
                 .dataSource(secondaryDataSource)
                 .properties(vendorProperties)
@@ -42,12 +42,12 @@ public class SecondaryConfig {
     }
 
     @Bean(name = "entityManagerSecondary")
-    public EntityManager entityManager(EntityManagerFactoryBuilder builder){
+    public EntityManager entityManager(EntityManagerFactoryBuilder builder) {
         return entityManagerFactorySecondary(builder).getObject().createEntityManager();
     }
 
     @Bean(name = "transactionManagerSecondary")
-    PlatformTransactionManager transactionManagerSecondary(EntityManagerFactoryBuilder builder){
+    PlatformTransactionManager transactionManagerSecondary(EntityManagerFactoryBuilder builder) {
         return new JpaTransactionManager(entityManagerFactorySecondary(builder).getObject());
     }
 }

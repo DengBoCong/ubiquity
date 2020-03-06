@@ -23,13 +23,13 @@ public class DataSourceConfig {
     @Bean(name = "primaryDataSource")
     @Primary
     @ConfigurationProperties("spring.datasource.primary")
-    public DataSource firstDataSource(){
+    public DataSource firstDataSource() {
         return DataSourceBuilder.create().build();
     }
 
     @Bean(name = "secondaryDataSource")
     @ConfigurationProperties("spring.datasource.secondary")
-    public DataSource secondDataSource(){
+    public DataSource secondDataSource() {
         return DataSourceBuilder.create().build();
     }
 

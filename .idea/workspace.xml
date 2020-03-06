@@ -24,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,6 +63,9 @@
     <property name="last_opened_file_path" value="$APPLICATION_CONFIG_DIR$/jdbc-drivers/mysql-connector-java-8.0.15.jar" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="com.dbc.ubiquity.Model.Secondary" />
@@ -72,7 +75,23 @@
       <recent name="D:\Intellij Idea Project\ubiquity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UbiquityApplicationTests.contextLoads">
+  <component name="RunManager" selected="Spring Boot.UbiquityApplication">
+    <configuration name="MessageControllerTest.saveMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ubiquity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dbc.ubiquity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dbc.ubiquity" />
+      <option name="MAIN_CLASS_NAME" value="com.dbc.ubiquity.MessageControllerTest" />
+      <option name="METHOD_NAME" value="saveMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UbiquityApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ubiquity" />
       <extension name="coverage">
@@ -130,6 +149,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MessageControllerTest.saveMessage" />
         <item itemvalue="JUnit.UbiquityApplicationTests.contextLoads" />
         <item itemvalue="JUnit.UbiquityApplicationTests.testSave" />
         <item itemvalue="JUnit.UbiquityApplicationTests.testBaseQuery" />
@@ -147,6 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583377448772</updated>
       <workItem from="1583377457589" duration="24939000" />
+      <workItem from="1583460453693" duration="17681000" />
     </task>
     <servers />
   </component>
@@ -171,6 +192,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="2" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1583404660587" />
+    <state x="144" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1583490679974">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="144" y="38" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1583490679974" />
     <state x="371" y="121" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1583405189865">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -179,6 +204,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="312" y="0" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1280.680@0.0.1280.680" timestamp="1583405230752" />
+    <state x="0" y="273" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1583490353410">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="273" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1583490353410" />
     <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583405428752">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -187,38 +216,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="205" y="88" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583403741545" />
-    <state width="1237" height="183" key="GridCell.Tab.0.bottom" timestamp="1583423214445">
+    <state width="1237" height="209" key="GridCell.Tab.0.bottom" timestamp="1583494217532">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="183" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583423214445" />
-    <state width="1237" height="183" key="GridCell.Tab.0.center" timestamp="1583423214442">
+    <state width="1237" height="209" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583494217532" />
+    <state width="1237" height="209" key="GridCell.Tab.0.center" timestamp="1583494217531">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="183" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583423214442" />
-    <state width="1237" height="183" key="GridCell.Tab.0.left" timestamp="1583423214442">
+    <state width="1237" height="209" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583494217531" />
+    <state width="1237" height="209" key="GridCell.Tab.0.left" timestamp="1583494217531">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="183" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583423214442" />
-    <state width="1237" height="183" key="GridCell.Tab.0.right" timestamp="1583423214443">
+    <state width="1237" height="209" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583494217531" />
+    <state width="1237" height="209" key="GridCell.Tab.0.right" timestamp="1583494217532">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="183" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583423214442" />
-    <state width="1237" height="181" key="GridCell.Tab.1.bottom" timestamp="1583423214438">
+    <state width="1237" height="209" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583494217532" />
+    <state width="1237" height="209" key="GridCell.Tab.1.bottom" timestamp="1583494179993">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="181" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583423214438" />
-    <state width="1237" height="181" key="GridCell.Tab.1.center" timestamp="1583423214438">
+    <state width="1237" height="209" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583494179993" />
+    <state width="1237" height="209" key="GridCell.Tab.1.center" timestamp="1583494179993">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="181" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583423214438" />
-    <state width="1237" height="181" key="GridCell.Tab.1.left" timestamp="1583423214438">
+    <state width="1237" height="209" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583494179993" />
+    <state width="1237" height="209" key="GridCell.Tab.1.left" timestamp="1583494179993">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="181" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583423214438" />
-    <state width="1237" height="181" key="GridCell.Tab.1.right" timestamp="1583423214438">
+    <state width="1237" height="209" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583494179993" />
+    <state width="1237" height="209" key="GridCell.Tab.1.right" timestamp="1583494179993">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="181" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583423214438" />
+    <state width="1237" height="209" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583494179993" />
     <state width="218" height="477" key="HiddenNamespacesPopup" timestamp="1583403791039">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -231,9 +260,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="337" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1583460452309" />
-    <state x="28" y="48" key="new project wizard" timestamp="1583416930229">
+    <state x="28" y="48" key="new project wizard" timestamp="1583483649645">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="28" y="48" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1583416930229" />
+    <state x="28" y="48" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1583483649645" />
   </component>
 </project>

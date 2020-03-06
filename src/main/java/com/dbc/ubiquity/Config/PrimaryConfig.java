@@ -34,7 +34,7 @@ public class PrimaryConfig {
 
     @Bean(name = "entityManagerFactoryPrimary")
     @Primary
-    public LocalContainerEntityManagerFactoryBean entityManagerFactoryPrimary(EntityManagerFactoryBuilder builder){
+    public LocalContainerEntityManagerFactoryBean entityManagerFactoryPrimary(EntityManagerFactoryBuilder builder) {
         return builder
                 .dataSource(primaryDataSource)
                 .properties(vendorProperties)
@@ -45,13 +45,13 @@ public class PrimaryConfig {
 
     @Bean(name = "entityManagerPrimary")
     @Primary
-    public EntityManager entityManager(EntityManagerFactoryBuilder builder){
+    public EntityManager entityManager(EntityManagerFactoryBuilder builder) {
         return entityManagerFactoryPrimary(builder).getObject().createEntityManager();
     }
 
     @Bean(name = "transactionManagerPrimary")
     @Primary
-    PlatformTransactionManager transactionManagerPrimary(EntityManagerFactoryBuilder builder){
+    PlatformTransactionManager transactionManagerPrimary(EntityManagerFactoryBuilder builder) {
         return new JpaTransactionManager(entityManagerFactoryPrimary(builder).getObject());
     }
 }
