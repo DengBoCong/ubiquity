@@ -60,4 +60,11 @@ class UbiquityApplicationTests {
 		mailService.sendSimpleMail("xxxxxx@qq.com", "你好呀", "邮件测试");
 	}
 
+	@Autowired
+	private HelloSender helloSender;
+	@Test
+	public void hello() throws Exception {
+		helloSender.send();
+	}
+
 }
