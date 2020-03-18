@@ -18,7 +18,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ubiquity@49.235.33.100" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ubiquity@49.235.33.100" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ubiquity@49.235.33.100" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ubiquity: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -52,7 +68,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="JPA.DatabaseSchemaImportDialog" value="00783112-5001-4f45-923d-cd5716e290b5" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="a36858f6-ab86-4f07-8a2b-0e26bf7af373" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -61,6 +77,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="ReactorSettings">
@@ -68,14 +87,15 @@
   </component>
   <component name="RecentsManager">
     <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="com.dbc.ubiquity.Model.Secondary" />
+      <recent name="com.dbc.ubiquity.Entity.Primary" />
       <recent name="com.dbc.ubiquity.Model.Primary" />
+      <recent name="com.dbc.ubiquity.Model.Secondary" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Intellij Idea Project\ubiquity" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.UbiquityApplication">
+  <component name="RunManager" selected="JUnit.UbiquityApplicationTests.testSave">
     <configuration name="MessageControllerTest.saveMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ubiquity" />
       <extension name="coverage">
@@ -165,10 +185,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UbiquityApplicationTests.testSave" />
         <item itemvalue="JUnit.UbiquityApplicationTests.hello" />
         <item itemvalue="JUnit.MessageControllerTest.saveMessage" />
         <item itemvalue="JUnit.UbiquityApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.UbiquityApplicationTests.testSave" />
         <item itemvalue="JUnit.UbiquityApplicationTests.testBaseQuery" />
       </list>
     </recent_temporary>
@@ -186,7 +206,12 @@
       <workItem from="1583377457589" duration="24939000" />
       <workItem from="1583460453693" duration="18262000" />
       <workItem from="1583548131573" duration="12963000" />
-      <workItem from="1583634052116" duration="6951000" />
+      <workItem from="1583634052116" duration="7381000" />
+      <workItem from="1583716490313" duration="1543000" />
+      <workItem from="1583803748877" duration="1814000" />
+      <workItem from="1583891266315" duration="1305000" />
+      <workItem from="1584416538426" duration="1857000" />
+      <workItem from="1584495321387" duration="16916000" />
     </task>
     <servers />
   </component>
@@ -207,6 +232,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="4" key="#HTTP_Proxy/0.0.1280.680@0.0.1280.680" timestamp="1583403276267" />
+    <state x="233" y="2" key="#Project_Structure" timestamp="1584432380820">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="2" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1584432380820" />
     <state x="233" y="2" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583404660587">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -215,22 +244,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="144" y="38" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1583490679974" />
-    <state x="371" y="121" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1583405189865">
+    <state x="371" y="121" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1584524979289">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="121" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1583405189865" />
-    <state x="312" y="0" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1583405230752">
+    <state x="371" y="121" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1584524979289" />
+    <state x="312" y="0" width="830" height="680" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1584525001516">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="312" y="0" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1280.680@0.0.1280.680" timestamp="1583405230752" />
+    <state x="312" y="0" width="830" height="680" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1280.680@0.0.1280.680" timestamp="1584525001516" />
     <state x="0" y="273" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1583490353410">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="273" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1583490353410" />
-    <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583405428752">
+    <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584526608080">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1583405428752" />
+    <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1584526608080" />
     <state x="205" y="88" key="FileChooserDialogImpl" timestamp="1583637439651">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -239,38 +268,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="505" y="236" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1583637537373" />
-    <state width="1237" height="75" key="GridCell.Tab.0.bottom" timestamp="1583589366979">
+    <state width="1237" height="132" key="GridCell.Tab.0.bottom" timestamp="1584526599006">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="75" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583589366979" />
-    <state width="1237" height="75" key="GridCell.Tab.0.center" timestamp="1583589366978">
+    <state width="1237" height="132" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584526599006" />
+    <state width="1237" height="132" key="GridCell.Tab.0.center" timestamp="1584526599006">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="75" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583589366977" />
-    <state width="1237" height="75" key="GridCell.Tab.0.left" timestamp="1583589366977">
+    <state width="1237" height="132" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584526599006" />
+    <state width="1237" height="132" key="GridCell.Tab.0.left" timestamp="1584526599005">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="75" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583589366977" />
-    <state width="1237" height="75" key="GridCell.Tab.0.right" timestamp="1583589366978">
+    <state width="1237" height="132" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584526599005" />
+    <state width="1237" height="132" key="GridCell.Tab.0.right" timestamp="1584526599006">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="75" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583589366978" />
-    <state width="1237" height="75" key="GridCell.Tab.1.bottom" timestamp="1583589366980">
+    <state width="1237" height="132" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584526599006" />
+    <state width="1237" height="132" key="GridCell.Tab.1.bottom" timestamp="1584526599007">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="75" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583589366980" />
-    <state width="1237" height="75" key="GridCell.Tab.1.center" timestamp="1583589366979">
+    <state width="1237" height="132" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584526599007" />
+    <state width="1237" height="132" key="GridCell.Tab.1.center" timestamp="1584526599006">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="75" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583589366979" />
-    <state width="1237" height="75" key="GridCell.Tab.1.left" timestamp="1583589366979">
+    <state width="1237" height="132" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1584526599006" />
+    <state width="1237" height="132" key="GridCell.Tab.1.left" timestamp="1584526599006">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="75" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583589366979" />
-    <state width="1237" height="75" key="GridCell.Tab.1.right" timestamp="1583589366979">
+    <state width="1237" height="132" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1584526599006" />
+    <state width="1237" height="132" key="GridCell.Tab.1.right" timestamp="1584526599006">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="75" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583589366979" />
+    <state width="1237" height="132" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1584526599006" />
     <state width="218" height="477" key="HiddenNamespacesPopup" timestamp="1583403791039">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -279,13 +308,17 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583637394161" />
-    <state x="337" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1583634094530">
+    <state x="337" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1584495336476">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1583634094530" />
+    <state x="337" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584495336476" />
     <state x="28" y="48" key="new project wizard" timestamp="1583659437547">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="28" y="48" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1583659437547" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1584517114556">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1584517114556" />
   </component>
 </project>
