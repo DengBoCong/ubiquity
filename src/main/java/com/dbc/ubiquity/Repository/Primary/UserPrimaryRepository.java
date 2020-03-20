@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface UserPrimaryPository extends JpaRepository<PUbiquityUserEntity, Integer> {
+public interface UserPrimaryRepository extends JpaRepository<PUbiquityUserEntity, Integer> {
     @Query("select user from PUbiquityUserEntity user where user.account = :account")
     Optional<PUbiquityUserEntity> findByAccount(@Param("account") String account);
 }

@@ -6,6 +6,7 @@ import com.dbc.ubiquity.Entity.Primary.PUbiquityUserEntity;
 import com.dbc.ubiquity.Service.PUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,8 +22,9 @@ public class UserController {
     @Autowired
     private PUserService pUserService;
 
-    @PostMapping("/getUserByAccount")
     //@Cacheable(value = "user-key")
+    @PostMapping("/getUserByAccount")
+    @PreAuthorize("hasRole('USER')")
     public BaseResult<PUbiquityUserEntity> getUser(PUbiquityUserEntity userEntity) {
         PUbiquityUserEntity user = pUserService.getUserByAccount(userEntity.getAccount());
         if(user == null) return BaseResult.failWithCodeAndMsg(1, Str.ACCOUNT_ERROR);
@@ -32,8 +34,11 @@ public class UserController {
             return BaseResult.failWithCodeAndMsg(2, Str.PWD_ERROR);
     }
 
+
+
+//    @Cacheable(value = "userList")
     @GetMapping("/getAllUser")
-    @Cacheable(value = "userList")
+    @PreAuthorize("hasRole('USER')")
     public List<PUbiquityUserEntity> getAllUser(){
         return pUserService.getUserAll();
     }

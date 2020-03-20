@@ -1,7 +1,7 @@
 package com.dbc.ubiquity.Service.Impl;
 
 import com.dbc.ubiquity.Entity.Primary.PUbiquityUserEntity;
-import com.dbc.ubiquity.Repository.Primary.UserPrimaryPository;
+import com.dbc.ubiquity.Repository.Primary.UserPrimaryRepository;
 import com.dbc.ubiquity.Service.PUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -16,25 +16,25 @@ import java.util.List;
 @Transactional(rollbackFor = Exception.class)
 public class PUserServiceImpl implements PUserService {
     @Autowired
-    UserPrimaryPository userPrimaryPository;
+    UserPrimaryRepository userPrimaryRepository;
 
     @Override
     public void addUser(PUbiquityUserEntity pUbiquityUserEntity) {
-        userPrimaryPository.save(pUbiquityUserEntity);
+        userPrimaryRepository.save(pUbiquityUserEntity);
     }
 
     @Override
     public List<PUbiquityUserEntity> getUserAll() {
-        return userPrimaryPository.findAll(Sort.by(Sort.Direction.ASC, "id"));
+        return userPrimaryRepository.findAll(Sort.by(Sort.Direction.ASC, "id"));
     }
 
     @Override
     public PUbiquityUserEntity getUserById(int id) {
-        return userPrimaryPository.findById(id).orElse(null);
+        return userPrimaryRepository.findById(id).orElse(null);
     }
 
     @Override
     public PUbiquityUserEntity getUserByAccount(String account) {
-        return userPrimaryPository.findByAccount(account).orElse(null);
+        return userPrimaryRepository.findByAccount(account).orElse(null);
     }
 }

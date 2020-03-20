@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "UBIQUITY_USER", schema = "ubiquity", catalog = "")
@@ -20,10 +21,7 @@ public class PUbiquityUserEntity implements Serializable {
     private int updTime;
     private byte realStatus;
     private byte role;
-//    @Transient
-//    @ManyToMany(fetch = FetchType.EAGER)//立即从数据库加载数据
-//    @JoinTable(name = "UBIQUITY_USER_ROLE", joinColumns = { @JoinColumn(name = "uid") }, inverseJoinColumns ={@JoinColumn(name = "roleId") })
-//    private List<PUbiquityRoleEntity> roles;
+    private List<PUbiquityRoleEntity> roles;
     private String email;
     private String avatar;
     private String backCard;
@@ -280,14 +278,16 @@ public class PUbiquityUserEntity implements Serializable {
         this.birthday = birthday;
     }
 
-//    @Transient
-//    public List<PUbiquityRoleEntity> getRoles() {
-//        return roles;
-//    }
-//
-//    public void setRoles(List<PUbiquityRoleEntity> roles) {
-//        this.roles = roles;
-//    }
+
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)//立即从数据库加载数据
+    @JoinTable(name = "UBIQUITY_USER_ROLE", joinColumns = { @JoinColumn(name = "account", referencedColumnName = "account") }, inverseJoinColumns ={@JoinColumn(name = "name", referencedColumnName = "name") })
+    public List<PUbiquityRoleEntity> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<PUbiquityRoleEntity> roles) {
+        this.roles = roles;
+    }
 
     @Override
     public boolean equals(Object o) {

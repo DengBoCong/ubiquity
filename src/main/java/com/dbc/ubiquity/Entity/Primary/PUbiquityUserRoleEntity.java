@@ -10,8 +10,8 @@ public class PUbiquityUserRoleEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private int id;
-    private int uid;
-    private int roleId;
+    private String account;
+    private String name;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,23 +25,23 @@ public class PUbiquityUserRoleEntity implements Serializable {
     }
 
     @Basic
-    @Column(name = "uid", length = 11)
-    public int getUid() {
-        return uid;
+    @Column(name = "account", length = 20)
+    public String getAccount() {
+        return account;
     }
 
-    public void setUid(int uid) {
-        this.uid = uid;
+    public void setAccount(String account) {
+        this.account = account;
     }
 
     @Basic
-    @Column(name = "roleId", length = 11)
-    public int getRoleId() {
-        return roleId;
+    @Column(name = "name", length = 20)
+    public String getName() {
+        return name;
     }
 
-    public void setRoleId(int roleId) {
-        this.roleId = roleId;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
@@ -50,19 +50,19 @@ public class PUbiquityUserRoleEntity implements Serializable {
         if (o == null || getClass() != o.getClass()) return false;
         PUbiquityUserRoleEntity that = (PUbiquityUserRoleEntity) o;
         return id == that.id &&
-                uid == that.uid &&
-                roleId == that.roleId;
+                account == that.account &&
+                name == that.name;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, uid, roleId);
+        return Objects.hash(id, account, name);
     }
 
     public PUbiquityUserRoleEntity() { }
 
-    public PUbiquityUserRoleEntity(int uid, int roleId) {
-        this.uid = uid;
-        this.roleId = roleId;
+    public PUbiquityUserRoleEntity(String account, String name) {
+        this.account = account;
+        this.name = name;
     }
 }

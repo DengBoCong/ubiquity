@@ -1,8 +1,12 @@
 package com.dbc.ubiquity.Entity.Primary;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "UBIQUITY_ROLE", schema = "ubiquity", catalog = "")
@@ -13,6 +17,17 @@ public class PUbiquityRoleEntity implements Serializable {
     private String name;
     private Byte sort;
     private String description;
+    private List<PUbiquityUserEntity> userRoles;
+
+    @JsonIgnore
+    @ManyToMany(mappedBy = "roles", fetch = FetchType.LAZY)
+    public List<PUbiquityUserEntity> getUserRoles() {
+        return userRoles;
+    }
+
+    public void setUserRoles(List<PUbiquityUserEntity> userRoles) {
+        this.userRoles = userRoles;
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

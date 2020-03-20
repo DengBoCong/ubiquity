@@ -1,7 +1,7 @@
 package com.dbc.ubiquity;
 
 import com.dbc.ubiquity.Entity.Primary.PUbiquityUserEntity;
-import com.dbc.ubiquity.Repository.Primary.UserPrimaryPository;
+import com.dbc.ubiquity.Repository.Primary.UserPrimaryRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,14 +12,14 @@ import java.util.Date;
 @RestController
 public class HelloWorld {
     @Resource
-    private UserPrimaryPository userPrimaryPository;
+    private UserPrimaryRepository userPrimaryRepository;
 
     @GetMapping("/hello")
     public String hello(){
         Date date = new Date();
         DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG);
         String formattedDate = dateFormat.format(date);
-        userPrimaryPository.save(new PUbiquityUserEntity());
+        userPrimaryRepository.save(new PUbiquityUserEntity());
         return "hello world";
     }
 
@@ -28,7 +28,7 @@ public class HelloWorld {
         Date date = new Date();
         DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG);
         String formattedDate = dateFormat.format(date);
-        userPrimaryPository.save(new PUbiquityUserEntity());
+        userPrimaryRepository.save(new PUbiquityUserEntity());
         return "hello world";
     }
 }
