@@ -1,6 +1,6 @@
 package com.dbc.ubiquity.Utils;
 
-import com.dbc.ubiquity.Constant.Number;
+import com.dbc.ubiquity.Constant.Num;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,12 +32,12 @@ public class DateUtil {
     }
 
     public static int LastWeekTime(){
-        long nowTimeMills = (System.currentTimeMillis() - Number.ONE_WEEK_MILLS) / 1000;
+        long nowTimeMills = (System.currentTimeMillis() - Num.ONE_WEEK_MILLS) / 1000;
         return new Long(nowTimeMills).intValue();
     }
 
     public static int LastDayTime(){
-        long nowTimeMills = (System.currentTimeMillis() - Number.ONE_DAY_MILLS) / 1000;
+        long nowTimeMills = (System.currentTimeMillis() - Num.ONE_DAY_MILLS) / 1000;
         return new Long(nowTimeMills).intValue();
     }
 }

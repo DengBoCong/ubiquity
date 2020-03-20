@@ -28,7 +28,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Ubiquity系统")
-                .description("Ubiquity系统 API 1.0.0")
+                .description("Ubiquity系统 API 1.3.6")
                 .termsOfServiceUrl("https://dengbocong.blog.csdn.net/")
                 .version("1.0")
                 .contact(new Contact("DengBoCong", "https://dengbocong.blog.csdn.net/", "1210212670@qq.com"))
